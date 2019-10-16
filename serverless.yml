@@ -20,7 +20,7 @@ provider:
   name: aws
   runtime: nodejs10.x
   stage: ${env:STAGE, 'dev'} # Use .env value for STAGE if set, otherwise 'dev'
-  region: us-east-1
+  region: eu-central-1
 
   # These environment variables are made available to our functions
   # under process.env.
