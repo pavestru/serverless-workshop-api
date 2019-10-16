@@ -16,6 +16,7 @@ export async function main(event, context) {
     // 'ExpressionAttributeValues' defines the value in the update expression
     UpdateExpression: "SET content = :content, attachment = :attachment",
     ExpressionAttributeValues: {
+      ":attachment": data.attachment || null,
       ":content": data.content || null
     },
     // 'ReturnValues' specifies if and how to return the item's attributes,
